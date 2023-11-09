@@ -7,7 +7,7 @@ const Gallery = () => {
     // do map instead hardc
 
   return (
-    <div className="galleryContainer">
+    <div className="galleryContainer" id="gallery">
       <h2>GALLERY</h2>
       <div className="underline"></div>
       <Carousel indicators={false}>
