@@ -1,0 +1,79 @@
+.galleryContainer {
+  background-color: #2e2c2c;
+  margin: 130px 30px 0 30px;
+  padding: 30px;
+  border-radius: 20px;
+  height: 850px;
+}
+
+.carouselContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 60px 30px 30px 30px;
+}
+
+.sideParts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallerySideImages {
+  width: 350px;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.lastSideImage {
+  transform: translateY(-200px);
+  z-index: 1;
+}
+
+.firstPartRectangle {
+  border-radius: 20px;
+  border: 3px solid rgba(9, 141, 102, 0.5);
+  width: 250px;
+  height: 200px;
+  transform: translateY(-150px);
+  z-index: 0;
+}
+
+.thirdPartRectangle {
+  border-radius: 20px;
+  border: 3px solid rgba(9, 141, 102, 0.5);
+  width: 250px;
+  height: 200px;
+  transform: translateY(-50px);
+  z-index: 0;
+}
+
+.line_1 {
+  width: 60px;
+  height: 3px;
+  background: rgba(9, 141, 102, 0.5);
+  transform: translateY(-200px);
+}
+
+.line_2 {
+  width: 60px;
+  height: 3px;
+  background: rgba(9, 141, 102, 0.5);
+}
+
+.secondPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 425px;
+  transform: translateY(-100px);
+}
+
+.galleryMiddleImages {
+  width: 250px;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+}

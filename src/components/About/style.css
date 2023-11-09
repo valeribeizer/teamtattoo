@@ -1,0 +1,35 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.img_about {
+  z-index: 9;
+  border-radius: 20px;
+  position: absolute;
+  margin: 170px 0 0 30px;
+}
+
+.border_img {
+  position: relative;
+  border-radius: 20px;
+  border: 3px solid rgba(9, 141, 102, 0.5);
+  width: 576px;
+  height: 592px;
+  z-index: 0;
+  margin: 100px 0 0 100px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 170px 70px 0 70px;
+  gap: 20px;
+}

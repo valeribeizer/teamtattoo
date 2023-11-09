@@ -1,0 +1,48 @@
+h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Academy Engraved LET", sans-serif;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h2 {
+  color: #fff;
+  font-family: "Academy Engraved LET", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+h3 {
+  color: #098d66;
+  font-family: "Academy Engraved LET", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  display: inline;
+}
+
+h6 {
+  color: #fff;
+  text-align: center;
+  font-family: "Krub ExtraLight", sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 200;
+  line-height: normal;
+}
+
+p {
+  color: #fff;
+  text-align: justify;
+  font-family: "Krub", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.underline {
+  border-bottom: 2px solid #098d66;
+  margin-left: 100px;
+  width: 13%;
+}
