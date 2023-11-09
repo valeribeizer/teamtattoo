@@ -10,7 +10,7 @@ const Gallery = () => {
     <div className="galleryContainer">
       <h2>GALLERY</h2>
       <div className="underline"></div>
-      <Carousel>
+      <Carousel indicators={false}>
         <Carousel.Item>
           <div className="carouselContainer">
             <div className="sideParts">
