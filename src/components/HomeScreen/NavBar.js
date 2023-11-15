@@ -1,12 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 const NavBar = () => {
-  // sticky later
+  const [navbar, setNavbar] = useState(false);
+
+   const changeBackground = () => {
+     console.log(window.scrollY);
+     if (window.scrollY >= 66) {
+       setNavbar(true);
+     } else {
+       setNavbar(false);
+     }
+   };
+
+   useEffect(() => {
+     changeBackground();
+     // adding the event when scroll change background
+     window.addEventListener("scroll", changeBackground);
+   });
+
+  //  navbar ? "" : "bg-body-tertiary";
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar
+      expand="lg"
+      className={navbar ? "bg-body-tertiary-active" : "bg-body-tertiary"}
+      sticky="top"
+    >
       <Container>
         <Navbar.Brand href="#home">
           <img src="logo.png" alt="logo" />

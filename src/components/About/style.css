@@ -1,6 +1,7 @@
 .aboutContainer {
   display: flex;
   flex-direction: row;
+  padding-top: 50px;
 }
 
 .imgContainer {
@@ -32,4 +33,32 @@
   justify-content: center;
   padding: 170px 70px 0 70px;
   gap: 20px;
+}
+
+@media (max-width: 576px) {
+  .aboutContainer {
+    flex-direction: column;
+  }
+
+  .imgContainer {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+
+  .img_about {
+    width: 70%;
+    margin: 100px 0 0 30px;
+  }
+
+  .border_img {
+    width: 250px;
+    height: 340px;
+    margin: 50px 0 0 100px;
+  }
+
+  .textContainer {
+    padding: 70px 70px 0 70px;
+    order: 1;
+  }
 }

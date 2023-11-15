@@ -1,9 +1,8 @@
 .homeScreenContainer {
   display: flex;
-  flex-direction: column;
-  height: 100%;
+  flex-direction: row;
   background-color: #2e2c2c;
-  margin: 30px;
+  margin: -100px 30px 30px;
   border-radius: 20px;
 }
 
@@ -29,12 +28,15 @@
   background-color: transparent !important;
 }
 
+.bg-body-tertiary-active {
+  background-color: black !important;
+}
+
 .j {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   z-index: 0;
-  margin-top: -100px;
 }
 
 .nav-link {
@@ -70,4 +72,22 @@ button {
 
 button:hover {
   background-color: rgba(9, 141, 102, 0.7);
+}
+
+@media (max-width: 576px) {
+  .homeScreenContainer {
+    margin: -70px 30px 0;
+  }
+
+  .j {
+    flex-direction: column;
+    z-index: 0;
+    margin-top: 150px;
+    width: 100%;
+    gap: 40px;
+  }
+
+  button {
+    width: 55%;
+  }
 }

@@ -1,0 +1,11 @@
+.modal-content {
+  color: #fff;
+  background-color: #2e2c2c;
+  font-family: "Krub", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.btn-close {
+    --bs-btn-close-bg: url('/Users/valeri.beizer/Desktop/Websites (work)/TeamTattoo/teamtattoo/public/close_btn.png');
+}

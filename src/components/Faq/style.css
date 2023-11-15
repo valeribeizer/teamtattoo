@@ -1,0 +1,29 @@
+.faqContainer {
+  padding: 130px 30px;
+  margin: 100px 30px 0 30px;
+}
+
+.nav-link-title[aria-selected="true"] {
+  margin-left: 10px;
+  text-decoration: underline rgba(9, 141, 102, 0.5);
+  text-underline-offset: 5px;
+}
+
+.nav-link-title {
+  color: #fff;
+  font-family: "Academy Engraved LET", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.nav-link-title:hover {
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: underline rgba(9, 141, 102, 0.5);
+  text-underline-offset: 5px;
+}
+
+.p-faq-paragraph {
+  border: 3px solid rgba(9, 141, 102, 0.5);
+  padding: 20px;
+}

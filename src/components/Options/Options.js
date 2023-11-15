@@ -36,8 +36,8 @@ const Options = () => {
 
   return (
     <div className="optionsContainer">
-      <h2>WHY WE?</h2>
-      <div className="underline"></div>
+      <h2 style={{ textDecoration: "underline 2px rgb(9, 141, 102)",
+  textUnderlineOffset: "15px"}}>WHY WE?</h2>
       <div className="optionContainer">
         <div className="option">
           {options.map(({ num, value }, index) => (
