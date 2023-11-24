@@ -79,27 +79,57 @@
 }
 
 .carousel {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
 .carousel-control-prev {
-    top: -150px;
-    left: -100px;
+  top: -150px;
+  left: -100px;
 }
 
 .carousel-control-next {
-    top: -150px;
-    right: -15px;
+  top: -150px;
+  right: -15px;
 }
 
 /* change paths/ you can't use absolute paths */
 .carousel-control-prev-icon {
-    background-image: url('/Users/valeri.beizer/Desktop/Websites (work)/TeamTattoo/teamtattoo/public/arrow.png');
-    height: 4rem;
+  background-image: url("/Users/valeri.beizer/Desktop/Websites (work)/TeamTattoo/teamtattoo/public/arrow.png");
+  height: 4rem;
 }
 
 .carousel-control-next-icon {
-    background-image: url('/Users/valeri.beizer/Desktop/Websites (work)/TeamTattoo/teamtattoo/public/arrow.png');
-    height: 4rem;
-    transform: rotate(180deg);
+  background-image: url("/Users/valeri.beizer/Desktop/Websites (work)/TeamTattoo/teamtattoo/public/arrow.png");
+  height: 4rem;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 576px) {
+  .galleryContainer {
+    height: 1020px;
+  }
+
+  .carouselContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 60px 30px 30px 30px;
+  }
+
+  .carouselsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .carousel {
+    margin-left: 0;
+  }
+
+  .galleryImage {
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+  }
 }

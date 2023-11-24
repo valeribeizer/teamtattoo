@@ -9,18 +9,34 @@ const Footer = () => {
       <Navbar.Brand href="#home">
         <img src="logo.png" alt="logo" />
       </Navbar.Brand>
-      <Nav style={{ display: "block" }}>
-        <Nav.Link href="#about">about</Nav.Link>
-        <Nav.Link href="#artists">artists</Nav.Link>
-        <Nav.Link href="#gallery">gallery</Nav.Link>
-        <Nav.Link href="#faq">faq</Nav.Link>
-      </Nav>
-      <div style={{ display: "flex", flexDirection: "column", alignItems: 'center' }}>
+      {window.innerWidth > 600 ? (
+        <Nav style={{ display: "block" }}>
+          <Nav.Link href="#about">about</Nav.Link>
+          <Nav.Link href="#artists">artists</Nav.Link>
+          <Nav.Link href="#gallery">gallery</Nav.Link>
+          <Nav.Link href="#faq">faq</Nav.Link>
+        </Nav>
+      ) : (
+        ""
+      )}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         <p>+46 76 743 46 44</p>
         <p>+46 73 706 94 73</p>
         <p>tattooteam@gmail.com</p>
       </div>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         <h4>RAY</h4>
         <div className="iconsContainer">
           <a href="https://www.instagram.com/rz.ttoo/">

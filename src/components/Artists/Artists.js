@@ -21,7 +21,10 @@ const Artists = () => {
       <Tab.Container defaultActiveKey="first">
         <Row>
           <Col sm={3}>
-            <Nav variant="pills" className="flex-column">
+            <Nav
+              variant={window.innerWidth > 600 ? "pills" : "tabs"}
+              className={window.innerWidth > 600 ? "flex-column" : ""}
+            >
               <Nav.Item>
                 <Nav.Link eventKey="first">Violet</Nav.Link>
               </Nav.Item>

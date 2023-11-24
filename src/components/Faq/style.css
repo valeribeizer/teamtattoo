@@ -27,3 +27,44 @@
   border: 3px solid rgba(9, 141, 102, 0.5);
   padding: 20px;
 }
+
+@media (max-width: 576px) {
+  .faqContainer {
+    padding: 0 0 0 30px;
+  }
+
+  .accordion {
+    margin-top: 30px;
+    --bs-accordion-bg: rgb(0, 0, 0);
+    --bs-accordion-active-bg: none;
+    --bs-accordion-border-color: none;
+    --bs-accordion-border-width: none;
+    --bs-accordion-border-radius: none;
+    --bs-accordion-inner-border-radius: none;
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-btn-color: #fff;
+    --bs-accordion-active-color: #fff;
+    --bs-accordion-btn-active-icon: url("/Users/valeri.beizer/Desktop/Websites (work)/TeamTattoo/teamtattoo/public/active_arrow.svg");
+    --bs-accordion-body-padding-x: 0;
+  }
+
+  .p-faq-paragraph {
+    border: 2px solid rgba(9, 141, 102, 0.5);
+    padding: 16px;
+  }
+
+  .nav-link-title:hover {
+    margin-left: 0;
+  }
+
+  .accordion-button {
+    font-size: 22px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  button.accordion-button:hover {
+    background-color: transparent;
+  }
+}

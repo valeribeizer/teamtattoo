@@ -6,6 +6,11 @@ import Navbar from "react-bootstrap/Navbar";
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
 
+  const handleCollapse = () => {
+    var nav = document.getElementById("basic-navbar-nav");
+    nav.classList.remove("show");
+  };
+
    const changeBackground = () => {
      console.log(window.scrollY);
      if (window.scrollY >= 66) {
@@ -17,11 +22,9 @@ const NavBar = () => {
 
    useEffect(() => {
      changeBackground();
-     // adding the event when scroll change background
      window.addEventListener("scroll", changeBackground);
    });
 
-  //  navbar ? "" : "bg-body-tertiary";
   return (
     <Navbar
       expand="lg"
@@ -32,13 +35,21 @@ const NavBar = () => {
         <Navbar.Brand href="#home">
           <img src="logo.png" alt="logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" id='navBtn' />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#about">about</Nav.Link>
-            <Nav.Link href="#artists">artists</Nav.Link>
-            <Nav.Link href="#gallery">gallery</Nav.Link>
-            <Nav.Link href="#faq">faq</Nav.Link>
+            <Nav.Link href="#about" onClick={handleCollapse}>
+              about
+            </Nav.Link>
+            <Nav.Link href="#artists" onClick={handleCollapse}>
+              artists
+            </Nav.Link>
+            <Nav.Link href="#gallery" onClick={handleCollapse}>
+              gallery
+            </Nav.Link>
+            <Nav.Link href="#faq" onClick={handleCollapse}>
+              faq
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

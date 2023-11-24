@@ -22,11 +22,15 @@ const ContactForm = (props) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if (formDetails.name.length !== 0 && formDetails.phone.length !== 0) {
+    if (
+      formDetails.name.length !== 0 &&
+      formDetails.phone.length !== 0 &&
+      formDetails.email.length !== 0
+    ) {
       emailjs
         .sendForm(
-          "service_y8maagh",
-          "template_p0fnbe4",
+          "service_s5hiexk",
+          "template_ni0imaa",
           e.target,
           "g3lRXYQqlKOkmc1vN"
         )

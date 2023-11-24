@@ -13,10 +13,10 @@
 }
 
 .artistContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 30px;
 }
 
 .iconsContainer {
@@ -26,14 +26,14 @@
 }
 
 .artistInfo {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .artist_photo {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .artist_rectangle {
@@ -45,6 +45,70 @@
 }
 
 .p-artist-paragraph {
-    border: 3px solid rgba(9, 141, 102, 0.50);
+  border: 3px solid rgba(9, 141, 102, 0.5);
+  padding: 20px;
+}
+
+@media (max-width: 576px) {
+  .artistsContainer {
+    padding: 0px 30px;
+    margin: 100px 30px 0 30px;
+    height: 1450px;
+  }
+
+  .row {
+    margin-top: 50px;
+  }
+
+  .nav-tabs {
+    --bs-nav-tabs-border-width: none;
+    --bs-nav-tabs-border-color: none;
+    --bs-nav-tabs-border-radius: none;
+    --bs-nav-tabs-link-hover-border-color: none;
+    --bs-nav-tabs-link-active-color: none;
+    --bs-nav-tabs-link-active-bg: none;
+    --bs-nav-tabs-link-active-border-color: none;
+    border-bottom: none;
+  }
+
+  .artistContainer {
+    flex-direction: column;
+    gap: 0;
+    margin-top: 80px;
+  }
+
+  .iconsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .artistPhoto {
+    height: 450px;
+  }
+
+  .artistInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+  }
+
+  .artist_photo {
+    width: 80%;
+    margin-left: 65px;
+  }
+
+  .artist_rectangle {
+    border-radius: 20px;
+    border: 3px solid rgba(9, 141, 102, 0.5);
+    width: 250px;
+    height: 370px;
+    transform: translate(20px, -400px);
+  }
+
+  .p-artist-paragraph {
+    border: 3px solid rgba(9, 141, 102, 0.5);
     padding: 20px;
+  }
 }
