@@ -7,5 +7,5 @@
 }
 
 .btn-close {
-    --bs-btn-close-bg: url('/Users/valeri.beizer/Desktop/Websites (work)/TeamTattoo/teamtattoo/public/close_btn.png');
+    --bs-btn-close-bg: url('/public/close_btn.png');
 }

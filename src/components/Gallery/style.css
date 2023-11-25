@@ -92,14 +92,13 @@
   right: -15px;
 }
 
-/* change paths/ you can't use absolute paths */
 .carousel-control-prev-icon {
-  background-image: url("/Users/valeri.beizer/Desktop/Websites (work)/TeamTattoo/teamtattoo/public/arrow.png");
+  background-image: url("/public/arrow.png");
   height: 4rem;
 }
 
 .carousel-control-next-icon {
-  background-image: url("/Users/valeri.beizer/Desktop/Websites (work)/TeamTattoo/teamtattoo/public/arrow.png");
+  background-image: url("/public/arrow.png");
   height: 4rem;
   transform: rotate(180deg);
 }
