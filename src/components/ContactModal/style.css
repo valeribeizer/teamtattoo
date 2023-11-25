@@ -7,5 +7,5 @@
 }
 
 .btn-close {
-    --bs-btn-close-bg: url('/public/close_btn.png');
+  --bs-btn-close-bg: url("/public/close_btn.png");
 }
