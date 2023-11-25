@@ -97,7 +97,7 @@ button:hover {
 
   .navbar {
     height: 100%;
-    --bs-navbar-toggler-icon-bg: url(/public/toggler.svg);
+    --bs-navbar-toggler-icon-bg: url("/Users/valeri.beizer/Desktop/Websites (work)/TeamTattoo/teamtattoo/public/toggler.png");
   }
 
   .navbar-expand-lg .navbar-nav {
