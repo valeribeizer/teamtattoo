@@ -45,7 +45,7 @@
     --bs-accordion-btn-focus-box-shadow: none;
     --bs-accordion-btn-color: #fff;
     --bs-accordion-active-color: #fff;
-    --bs-accordion-btn-active-icon: url("/public/active_arrow.svg");
+    --bs-accordion-btn-active-icon: url("/public/active_arrow.png");
     --bs-accordion-body-padding-x: 0;
   }
 
