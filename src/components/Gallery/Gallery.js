@@ -3,14 +3,14 @@ import Carousel from "react-bootstrap/Carousel";
 import "./style.css";
 
 const Gallery = () => {
-
-    // do map instead hardc
+  // do map instead hardc
+  const styles = {
+    paddingTop: window.innerWidth > 600 ? "130px" : "0",
+  };
 
   return (
     <div
-      style={
-        window.innerWidth > 600 ? { paddingTop: "130px" } : { paddingTop: "0" }
-      }
+      style={styles}
       id="gallery"
     >
       <div className="galleryContainer">

@@ -28,7 +28,7 @@ const Footer = () => {
       >
         <p>+46 76 743 46 44</p>
         <p>+46 73 706 94 73</p>
-        <p>tattooteam@gmail.com</p>
+        <p>tattooteamsw@gmail.com</p>
       </div>
       <div
         style={{

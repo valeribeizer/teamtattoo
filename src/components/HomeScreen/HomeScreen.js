@@ -4,6 +4,14 @@ import ContactModal from "../ContactModal/ContactModal";
 
 const HomeScreen = () => {
   const [modalShow, setModalShow] = useState(false);
+  const srcImg =
+    window.innerWidth > 600
+      ? "home_screen_photo.png"
+      : "home_screen_photo_mobile.jpeg";
+
+      const styles = {
+        borderRadius: window.innerWidth > 600 ? "" : "20px",
+      };
   return (
     <div id="home" className="homeScreenContainer">
       <div className="j">
@@ -15,12 +23,8 @@ const HomeScreen = () => {
           <button onClick={() => setModalShow(true)}>free consultation</button>
         </div>
         <img
-          src={
-            window.innerWidth > 600
-              ? "home_screen_photo.png"
-              : "home_screen_photo_mobile.jpeg"
-          }
-          style={window.innerWidth > 600 ? "" : { borderRadius: "20px" }}
+          src={srcImg}
+          style={styles}
           alt="main_photo"
         />
       </div>
