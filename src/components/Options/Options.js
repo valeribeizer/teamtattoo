@@ -36,8 +36,14 @@ const Options = () => {
 
   return (
     <div className="optionsContainer">
-      <h2 style={{ textDecoration: "underline 2px rgb(9, 141, 102)",
-  textUnderlineOffset: "15px"}}>WHY WE?</h2>
+      <h2
+        style={{
+          textDecoration: "underline 2px rgb(9, 141, 102)",
+          textUnderlineOffset: "15px",
+        }}
+      >
+        WHY WE?
+      </h2>
       <div className="optionContainer">
         <div className="option">
           {options.map(({ num, value }, index) => (
@@ -47,11 +53,19 @@ const Options = () => {
             </div>
           ))}
         </div>
-        <div className="optionsPhotoContainer">
-          <div className="rectangle_1"></div>
-          <div className="rectangle_2"></div>
-          <img src="options_photo.png" alt="options_photo" className="options_photo" />
-        </div>
+        {window.innerWidth > 600 ? (
+          <div className="optionsPhotoContainer">
+            <div className="rectangle_1"></div>
+            <div className="rectangle_2"></div>
+            <img
+              src="options_photo.png"
+              alt="options_photo"
+              className="options_photo"
+            />
+          </div>
+        ) : (
+          <img src="option_img.png" alt='option_img' />
+        )}
       </div>
     </div>
   );

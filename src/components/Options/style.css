@@ -67,29 +67,12 @@ h2 {
 
 @media (max-width: 576px) {
   .optionsContainer {
-    height: 1950px;
+    height: 100%;
   }
 
   .optionContainer {
     flex-direction: column;
     gap: 50px;
     height: 100%;
-  }
-
-  .rectangle_1 {
-    width: 300px;
-    height: 370px;
-    transform: translate(-20px, -20px);
-  }
-
-  .rectangle_2 {
-    width: 200px;
-    height: 300px;
-    transform: translate(50px, 115px);
-  }
-
-  .options_photo {
-    width: 70%;
-    transform: translate(90px, -350px);
   }
 }
