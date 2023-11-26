@@ -37,14 +37,18 @@ const Artists = () => {
             <Tab.Content>
               <Tab.Pane eventKey="first">
                 <div className="artistContainer">
-                  <div className="artistPhoto">
-                    <img
-                      src="artist_violet.png"
-                      alt="artist_1"
-                      className="artist_photo"
-                    />
-                    <div className="artist_rectangle"></div>
-                  </div>
+                  {window.innerWidth > 600 ? (
+                    <div className="artistPhoto">
+                      <img
+                        src="artist_violet.png"
+                        alt="artist_1"
+                        className="artist_photo"
+                      />
+                      <div className="artist_rectangle"></div>
+                    </div>
+                  ) : (
+                    <img src="art_violet.png" alt="art_violet" />
+                  )}
                   <div className="artistInfo">
                     <h2>VIOLET</h2>
                     <p style={{ marginBottom: "0" }}>
@@ -82,14 +86,18 @@ const Artists = () => {
               </Tab.Pane>
               <Tab.Pane eventKey="second">
                 <div className="artistContainer">
-                  <div className="artistPhoto">
-                    <img
-                      src="artist_ray.png"
-                      alt="artist_2"
-                      className="artist_photo"
-                    />
-                    <div className="artist_rectangle"></div>
-                  </div>
+                  {window.innerWidth > 600 ? (
+                    <div className="artistPhoto">
+                      <img
+                        src="artist_ray.png"
+                        alt="artist_2"
+                        className="artist_photo"
+                      />
+                      <div className="artist_rectangle"></div>
+                    </div>
+                  ) : (
+                    <img src="art_ray.png" alt="art_ray" />
+                  )}
                   <div className="artistInfo">
                     <h2>RAY</h2>
                     <p style={{ marginBottom: "0" }}>

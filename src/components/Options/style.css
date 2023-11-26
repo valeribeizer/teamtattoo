@@ -72,7 +72,7 @@ h2 {
 
   .optionContainer {
     flex-direction: column;
-    gap: 50px;
+    gap: 10px;
     height: 100%;
   }
 }
