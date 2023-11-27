@@ -293,15 +293,15 @@ const Faq = () => {
                     about three weeks. Our masters use a special healing
                     plastic, which helps to heal the skin faster and safer. This
                     plastic is glued after the tattoo and keeping for 3-5 days.
-                    During these days you can take a shawer. After removing the
+                    During these days you can take a shower. After removing the
                     plastic you should wash the tattoo with non-parfume soap and
                     apply a thin layer of special healing cream, also for small
-                    tattoos is good to use coconut oil instead of cream. During
+                    tattoos it is good to use coconut oil instead of cream. During
                     two weeks you should repeat the process of washing the
                     tattoo with soap and applying cream/oil 5-6 times a day, so
                     that the skin heals faster and the tattoo looks its best.
-                    But don't forget that during this period you should not
-                    exercise, sunbathe, have sauna or salarium. It is also worth
+                    <br />But don't forget that during this period you should not
+                    exercise, sunbath, have sauna or salarium. It is also worth
                     remembering that the healing skin can itch, but don’t
                     scratch it. Because scratching can lead to infection and
                     damage to the tattoo. It is also important to maintain
@@ -319,7 +319,7 @@ const Faq = () => {
                 <Tab.Pane eventKey="2">
                   <p className="p-faq-paragraph">
                     Before getting a tattoo, you need to know a few factors on
-                    which the cost depends. The first and most obvious factor is
+                    which the cost depends. <br />The first and most obvious factor is
                     the size and placement of the tattoo. The larger the tattoo
                     and the more difficult it is to access, the higher the cost.
                     The second factor is the complexity of the drawing and its
@@ -328,12 +328,12 @@ const Faq = () => {
                     and rent. The master uses only premium grade consumables
                     that ensure the safety and quality of the tattoo. And
                     finally, it is important to realize that you are paying for
-                    something that you will have for life. A good master
+                    something that you will have for life. <br />A good master
                     realizes this and approaches the work with all
                     responsibility. He is willing to invest his time and
                     knowledge to make a tattoo that will not only be beautiful,
-                    but also safe. *To find out the cost of the tattoo, you need
-                    to describe your idea in detail. This will help the master
+                    but also safe. <br />*To find out the cost of the tattoo, you need
+                    to describe your idea in details. This will help the master
                     to estimate the amount of work and say you price. And
                     remember that the choice of the master is an investment in
                     your future tattoo.
@@ -349,18 +349,18 @@ const Faq = () => {
                     Each master makes sure that all consumables are disposable.
                     All reusable tools have fully sterilized process after each
                     use. All this is done in order to prevent possible
-                    infections. Also, don't forget that getting a tattoo is not
+                    infections. <br />Also, don't forget that getting a tattoo is not
                     only a procedure but also an extremely important choice that
                     you make. Therefore, take your time and choose only proven
                     masters. Always ask all the questions you are interested in
                     and do not neglect your health. The majority inks, care
-                    products and consumables are hypoallergenic. However, if you
+                    products and consumables are hypoallergenic. <br />However, if you
                     have a possible exacerbation of skin diseases or allergic
                     reactions - the master will always agree to conduct a rapid
                     test, putting you paint on the place of the future tattoo.
                     It is conducted as on the skin, and with subcutaneous
                     application, in which a small dot is put. Further you follow
-                    the body's reaction to it for a few days. And remember: if
+                    the body's reaction to it for a few days. <br />And remember: if
                     you used the services of a reliable master and follow all
                     the recommendations for the care of the tattoo after the
                     procedure, it will keep beautiful for many years and will
@@ -374,14 +374,14 @@ const Faq = () => {
                     comfortable, but also to get a great result. One of the main
                     rules of preparation is to avoid alcohol and aspirin. They
                     can increase the risk of bleeding and affect the color and
-                    quality of the tattoo. Also, you should not forget about
+                    quality of the tattoo. <br />Also, you should not forget about
                     good sleep and have good meal befor getting tattoo. The
                     better you feel, the easier it will be the process of
                     tattooing. Clothing also plays an important role in this
                     process. It should be loose and comfortable, without
                     accessories that can interfere with the work of the master.
                     Also keep in mind that there is a risk to get dirty your
-                    clothes with ink that will not wash off. Therefore, do not
+                    clothes with ink that will not wash off. <br />Therefore, do not
                     forget to think about your closet or bring a change of
                     clothes. Do not shave your hair on the proposed placement of
                     tattooing, the master will do it during the session. If you
@@ -406,11 +406,11 @@ const Faq = () => {
                     anatomy of the body and know how to best use design and
                     colors to cover the scar. In order to get the best results
                     when covering scars with tattoos, the artist should discuss
-                    with the client all the details. Finally, it is important to
+                    with the client all the details. <br />Finally, it is important to
                     realize that covering scars with tattoos can be a painful
                     process, especially if the scar is located in a sensitive
                     area of the body. If you would like to cover your scar with
-                    a tattoo, contact tattoo artist for a consultation. Keep in
+                    a tattoo, contact tattoo artist for a consultation. <br />Keep in
                     mind that covering scars with tattoos is more than just a
                     cosmetic procedure. It can help you overcome emotional
                     issues and learn to accept your body as it is.
@@ -427,9 +427,9 @@ const Faq = () => {
                     have a good understanding of color theories and tattooing
                     techniques. Before you decide to cover up an old tattoo, you
                     should consult with a artist and find out if it is possible
-                    in your case. Finally, it is important to remember that the
+                    in your case. <br />Finally, it is important to remember that the
                     process of covering up an old tattoo may take longer and
-                    cost more expensive. Therefore, if you decide to cover over
+                    cost more expensive. <br />Therefore, if you decide to cover over
                     your old tattoo, the artist should conduct a detailed
                     consultation to find out what your goals are and offer you
                     the best options to solve the problem.
@@ -450,7 +450,7 @@ const Faq = () => {
                     to the rescue. Follow the works of tattoo artists on social
                     media. Instagram is a great source of inspiration. You can
                     find the motif you want, see how it will look on skin,
-                    choose the style. Another source of inspiration is
+                    choose the style. <br />Another source of inspiration is
                     Pinterist. Here you can create your own board with images
                     you like. But remember that in order to realize your idea,
                     it is important to describe the idea to a artist in detail
@@ -503,7 +503,7 @@ const Faq = () => {
       ) : (
         <Accordion alwaysOpen>
           {accordion.map(({ key, title, desc }, index) => (
-            <Accordion.Item eventKey={key}>
+            <Accordion.Item eventKey={key} key={index}>
               <Accordion.Header className="nav-link-title" style={{ fontSize: '40px' }}>
                 {title}
               </Accordion.Header>

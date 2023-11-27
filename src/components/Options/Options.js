@@ -47,8 +47,8 @@ const Options = () => {
       <div className="optionContainer">
         <div className="option">
           {options.map(({ num, value }, index) => (
-            <div className="opt">
-              <h3 key={`${index}`}>{num}</h3>
+            <div className="opt" key={index}>
+              <h3>{num}</h3>
               <p className="p-options">{value}</p>
             </div>
           ))}
@@ -64,7 +64,7 @@ const Options = () => {
             />
           </div>
         ) : (
-          <img src="option_img.png" alt='option_img' />
+          <img src="option_img.png" alt="option_img" />
         )}
       </div>
     </div>
