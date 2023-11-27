@@ -3,6 +3,11 @@
   margin: 100px 30px 0 30px;
 }
 
+.underline_h2 {
+  text-decoration: underline 2px rgb(9, 141, 102);
+  text-underline-offset: 15px
+}
+
 .nav-link-title[aria-selected="true"] {
   margin-left: 10px;
   text-decoration: underline rgba(9, 141, 102, 0.5);
