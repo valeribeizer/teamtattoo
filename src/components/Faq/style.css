@@ -4,10 +4,10 @@
 }
 
 .underline_h2 {
-  text-decoration: underline 2px rgb(9, 141, 102);
-  text-underline-offset: 15px;
-  -webkit-text-decoration: underline 2px rgb(9, 141, 102);
-  -webkit-text-underline-offset: 15px;
+  text-decoration: underline 2px rgb(9, 141, 102) !important;
+  text-underline-offset: 15px !important;
+  -webkit-text-decoration: underline 2px rgb(9, 141, 102) !important;
+  -webkit-text-underline-offset: 15px !important;
 }
 
 .nav-link-title[aria-selected="true"] {
