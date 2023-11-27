@@ -37,7 +37,7 @@
 
 @media (max-width: 576px) {
   .faqContainer {
-    padding: 0 0 0 30px;
+    padding: 0;
   }
 
   .accordion {
