@@ -164,7 +164,7 @@ const Gallery = () => {
         ) : (
           <div className="carouselsContainer">
             <Carousel
-              indicators={false}
+              indicators={true}
               slide={false}
               controls={false}
               touch={true}
@@ -227,7 +227,7 @@ const Gallery = () => {
               </Carousel.Item>
             </Carousel>
             <Carousel
-              indicators={false}
+              indicators={true}
               slide={false}
               controls={false}
               touch={true}
