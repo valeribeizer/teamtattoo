@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 import "./style.css";
 
 const Faq = () => {
@@ -223,7 +224,14 @@ const Faq = () => {
   ];
   return (
     <div className="faqContainer" id="faq">
+     <AnimatedOnScroll
+          animationIn="fadeInRight"
+          style={{
+            animationDuration: "2000ms",
+          }}
+        >
       <h2 className="underline_h2">FAQ</h2>
+      </AnimatedOnScroll>
       {window.innerWidth > 600 ? (
         <Tab.Container defaultActiveKey="1">
           <Row>

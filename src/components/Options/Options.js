@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 import "./style.css";
 
 const Options = () => {
@@ -36,14 +37,21 @@ const Options = () => {
 
   return (
     <div className="optionsContainer">
-      <h2
+      <AnimatedOnScroll
+        animationIn="fadeInRight"
         style={{
-          textDecoration: "underline 2px rgb(9, 141, 102)",
-          textUnderlineOffset: "15px",
+          animationDuration: "2000ms",
         }}
       >
-        WHY WE?
-      </h2>
+        <h2
+          style={{
+            textDecoration: "underline 2px rgb(9, 141, 102)",
+            textUnderlineOffset: "15px",
+          }}
+        >
+          WHY WE?
+        </h2>
+      </AnimatedOnScroll>
       <div className="optionContainer">
         <div className="option">
           {options.map(({ num, value }, index) => (

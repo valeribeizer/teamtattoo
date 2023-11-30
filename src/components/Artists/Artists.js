@@ -4,20 +4,28 @@ import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
 import ContactModal from "../ContactModal/ContactModal";
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 import "./style.css";
 
 const Artists = () => {
   const [modalShow, setModalShow] = useState(false);
   return (
     <div className="artistsContainer" id="artists">
-      <h2
+      <AnimatedOnScroll
+        animationIn="fadeInRight"
         style={{
-          textDecoration: "underline 2px rgb(9, 141, 102)",
-          textUnderlineOffset: "15px",
+          animationDuration: "2000ms",
         }}
       >
-        ARTISTS
-      </h2>
+        <h2
+          style={{
+            textDecoration: "underline 2px rgb(9, 141, 102)",
+            textUnderlineOffset: "15px",
+          }}
+        >
+          ARTISTS
+        </h2>
+      </AnimatedOnScroll>
       <Tab.Container defaultActiveKey="first">
         <Row>
           <Col sm={3}>

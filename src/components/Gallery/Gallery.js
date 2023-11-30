@@ -1,27 +1,102 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 import "./style.css";
 
 const Gallery = () => {
-  // do map instead hardc
   const styles = {
     paddingTop: window.innerWidth > 600 ? "130px" : "0",
   };
 
+  const violet_portfolio = [
+    {
+      src: "gallery_2.jpeg",
+      alt: "gallery_2",
+    },
+    {
+      src: "gallery_3.jpeg",
+      alt: "gallery_3",
+    },
+    {
+      src: "gallery_6.jpeg",
+      alt: "gallery_6",
+    },
+    {
+      src: "gallery_7.jpeg",
+      alt: "gallery_7",
+    },
+    {
+      src: "gallery_10.jpeg",
+      alt: "gallery_10",
+    },
+    {
+      src: "gallery_11.jpeg",
+      alt: "gallery_11",
+    },
+    {
+      src: "gallery_14.jpeg",
+      alt: "gallery_14",
+    },
+    {
+      src: "gallery_15.jpeg",
+      alt: "gallery_15",
+    },
+  ];
+
+  const ray_portfolio = [
+    {
+      src: "gallery_1.jpeg",
+      alt: "gallery_1",
+    },
+    {
+      src: "gallery_4.jpeg",
+      alt: "gallery_4",
+    },
+    {
+      src: "gallery_5.jpeg",
+      alt: "gallery_5",
+    },
+    {
+      src: "gallery_8.jpeg",
+      alt: "gallery_8",
+    },
+    {
+      src: "gallery_9.jpeg",
+      alt: "gallery_9",
+    },
+    {
+      src: "gallery_12.jpeg",
+      alt: "gallery_12",
+    },
+    {
+      src: "gallery_13.jpeg",
+      alt: "gallery_13",
+    },
+    {
+      src: "gallery_16.jpeg",
+      alt: "gallery_16",
+    },
+  ];
+
   return (
-    <div
-      style={styles}
-      id="gallery"
-    >
+    <div style={styles} id="gallery">
       <div className="galleryContainer">
-        <h2
+        <AnimatedOnScroll
+          animationIn="fadeInRight"
           style={{
-            textDecoration: "underline 2px rgb(9, 141, 102)",
-            textUnderlineOffset: "15px",
+            animationDuration: "2000ms",
           }}
         >
-          GALLERY
-        </h2>
+          <h2
+            id="gallery_h2"
+            style={{
+              textDecoration: "underline 2px rgb(9, 141, 102)",
+              textUnderlineOffset: "15px",
+            }}
+          >
+            GALLERY
+          </h2>
+        </AnimatedOnScroll>
         {window.innerWidth > 600 ? (
           <Carousel indicators={false}>
             <Carousel.Item>
@@ -169,62 +244,11 @@ const Gallery = () => {
               controls={false}
               touch={true}
             >
-              <Carousel.Item>
-                <img
-                  className="galleryImage"
-                  src="gallery_1.jpeg"
-                  alt="gallery_1"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="galleryImage"
-                  src="gallery_4.jpeg"
-                  alt="gallery_4"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="galleryImage"
-                  src="gallery_5.jpeg"
-                  alt="gallery_5"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="galleryImage"
-                  src="gallery_8.jpeg"
-                  alt="gallery_8"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="galleryImage"
-                  src="gallery_9.jpeg"
-                  alt="gallery_9"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="galleryImage"
-                  src="gallery_12.jpeg"
-                  alt="gallery_12"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="galleryImage"
-                  src="gallery_13.jpeg"
-                  alt="gallery_13"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="galleryImage"
-                  src="gallery_16.jpeg"
-                  alt="gallery_16"
-                />
-              </Carousel.Item>
+              {ray_portfolio.map(({ src, alt }, index) => (
+                <Carousel.Item key={index}>
+                  <img className="galleryImage" src={src} alt={alt} />
+                </Carousel.Item>
+              ))}
             </Carousel>
             <Carousel
               indicators={true}
@@ -232,62 +256,11 @@ const Gallery = () => {
               controls={false}
               touch={true}
             >
-              <Carousel.Item>
-                <img
-                  className="galleryImage"
-                  src="gallery_2.jpeg"
-                  alt="gallery_2"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="galleryImage"
-                  src="gallery_3.jpeg"
-                  alt="gallery_3"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="galleryImage"
-                  src="gallery_6.jpeg"
-                  alt="gallery_6"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="galleryImage"
-                  src="gallery_7.jpeg"
-                  alt="gallery_7"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="galleryImage"
-                  src="gallery_10.jpeg"
-                  alt="gallery_10"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="galleryImage"
-                  src="gallery_11.jpeg"
-                  alt="gallery_11"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="galleryImage"
-                  src="gallery_14.jpeg"
-                  alt="gallery_14"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="galleryImage"
-                  src="gallery_15.jpeg"
-                  alt="gallery_15"
-                />
-              </Carousel.Item>
+              {violet_portfolio.map(({ src, alt }, index) => (
+                <Carousel.Item key={index}>
+                  <img className="galleryImage" src={src} alt={alt} />
+                </Carousel.Item>
+              ))}
             </Carousel>
           </div>
         )}
