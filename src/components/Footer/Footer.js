@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="footerContainer">
       <Navbar.Brand href="#home">
-        <img src="logo.png" alt="logo" />
+        <img src="logo.png" alt="logo" style={{ width: "140px" }} />
       </Navbar.Brand>
       {window.innerWidth > 600 ? (
         <Nav style={{ display: "block" }}>
@@ -29,6 +29,7 @@ const Footer = () => {
         <p>+46 76 743 46 44</p>
         <p>+46 73 706 94 73</p>
         <p>tattooteamsw@gmail.com</p>
+        <p>Stockholm, Odenplan</p>
       </div>
       <div
         style={{

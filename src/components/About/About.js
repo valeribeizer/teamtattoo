@@ -26,6 +26,9 @@ const About = () => {
           Whether you're getting your first tattoo or adding to your collection
           of existing tattoos, our Tattoo team is definitely the right choice in
           terms of quality and comfort!
+          <br />
+          <br />
+          We are located in Stockholm, Sweden. T-bana: Odenplan.
         </p>
       </div>
     </div>

@@ -33,7 +33,7 @@ const NavBar = () => {
     >
       <Container>
         <Navbar.Brand href="#home">
-          <img src="logo.png" alt="logo" />
+          <img src="logo.png" alt="logo" style={{ width: '140px' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" id='navBtn' />
         <Navbar.Collapse id="basic-navbar-nav">
