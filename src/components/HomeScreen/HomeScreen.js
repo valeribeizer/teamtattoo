@@ -17,6 +17,7 @@ const HomeScreen = () => {
       <div className="j">
         <div className="titleContainer">
           <h1>TATTOO TEAM</h1>
+          <h5>Stockholm</h5>
           <h6>
             A perfect place for anyone looking for an amazing tattoo experience!
           </h6>

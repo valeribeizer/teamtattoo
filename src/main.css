@@ -31,6 +31,15 @@ h4 {
   display: inline;
 }
 
+h5 {
+  color: #098d66;
+  font-family: "Oooh Baby", cursive;
+  font-size: 90px;
+  font-weight: 400;
+  margin-top: -120px;
+  margin-left: 180px;
+}
+
 h6 {
   color: #fff;
   text-align: center;
@@ -51,6 +60,12 @@ p {
 
 @media (max-width: 576px) {
   h1 {
-  font-size: 70px;
-}
+    font-size: 70px;
+  }
+
+  h5 {
+    font-size: 55px;
+    margin-top: -95px;
+    margin-left: 75px;
+  }
 }
