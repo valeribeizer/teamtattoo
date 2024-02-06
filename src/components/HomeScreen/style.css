@@ -40,7 +40,7 @@
 }
 
 .nav-link {
-  color: #2e2c2c;
+  color: white;
   font-family: "Krub", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -49,11 +49,11 @@
 }
 
 .nav-link:hover {
-  color: white;
+  color: #2e2c2c;
 }
 
 .navbar-nav .nav-link.active {
-  color: white;
+  color: #2e2c2c;
 }
 
 button {

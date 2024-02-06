@@ -49,6 +49,18 @@
   padding: 20px;
 }
 
+.link-artist {
+  color: #2e2c2c;
+}
+
+.link-artist.active {
+  color: white;
+}
+
+.link-artist:hover {
+  color: white;
+}
+
 @media (max-width: 576px) {
   .artistsContainer {
     padding: 0;

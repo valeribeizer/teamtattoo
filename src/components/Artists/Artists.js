@@ -34,10 +34,14 @@ const Artists = () => {
               className={window.innerWidth > 600 ? "flex-column" : ""}
             >
               <Nav.Item>
-                <Nav.Link eventKey="first">Violet</Nav.Link>
+                <Nav.Link eventKey="first" className="link-artist">
+                  Violet
+                </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="second">Ray</Nav.Link>
+                <Nav.Link eventKey="second" className="link-artist">
+                  Ray
+                </Nav.Link>
               </Nav.Item>
             </Nav>
           </Col>
