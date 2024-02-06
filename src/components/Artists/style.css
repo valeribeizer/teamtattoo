@@ -50,15 +50,15 @@
 }
 
 .link-artist {
-  color: #2e2c2c;
+  color: #2e2c2c !important;
 }
 
 .link-artist.active {
-  color: white;
+  color: white !important;
 }
 
 .link-artist:hover {
-  color: white;
+  color: white !important;
 }
 
 @media (max-width: 576px) {
