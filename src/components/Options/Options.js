@@ -49,7 +49,7 @@ const Options = () => {
             textUnderlineOffset: "15px",
           }}
         >
-          WHY WE?
+          WHY US?
         </h2>
       </AnimatedOnScroll>
       <div className="optionContainer">
