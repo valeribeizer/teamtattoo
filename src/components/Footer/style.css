@@ -11,6 +11,11 @@
   width: 30px;
 }
 
+.p-footer {
+  font-size: 12px;
+  text-align: center;
+}
+
 @media (max-width: 576px) {
   .footerContainer {
     flex-direction: column;
@@ -22,5 +27,10 @@
 
   .icons_footer {
     width: 30px;
+  }
+
+  .p-footer {
+    margin-top: 2%;
+    font-size: 10px;
   }
 }
